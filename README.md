@@ -35,6 +35,6 @@ Specs in `.kiro/specs/`, steering in `.kiro/steering/`, a test-on-save hook in `
 - **Hook.** `.kiro/hooks/test-on-save.json` runs `npm test` when a .ts or .json file is saved, which gave quick feedback while tuning thresholds and baking data.
 - **Agent with a shell.** Kiro verified gauges against the USGS and NWS APIs before keeping them, wrote the bake script, ran it, and checked results (47 bridges, 3 gauges, all sources recorded in `sources.json`). It also drove headless Chrome for the smoke test.
 - **What worked.** The skeleton made a second app small: a config, one adapter and a UI. `npm run new-app` scaffolded Bridge Troll. Writing the monotone-priority property in the spec made the risk model easy to design.
-- **What needed care.** Public data is messy: the NWS publishes only discharge thresholds for East Georgia and no major threshold, so the app says so instead of filling gaps. Essex Junction stage has a 20 h gap in the flood, which shows as "no trusted reading".
+- **What needed care.** Public data is messy: the NWS publishes only discharge thresholds for East Georgia and no major threshold, so the app says so instead of filling gaps. Essex Junction stage has a gap of about 21 h in the flood, which shows as "no trusted reading".
 
 MIT licensed.
