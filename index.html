@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><link rel="icon" href="data:,"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Graveyard Shift</title>
+<meta name="description" content="Night-shift triage: one small skeleton library, several apps.">
+<style>
+  .pitch { font-size:1.25rem; margin:.25rem 0 1rem; }
+  .lantern { display:inline-block; }
+  .apps { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(16rem,1fr)); padding:0; list-style:none; }
+  .apps li { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:.5rem 1rem; }
+  figure { margin:1.5rem 0; } figure svg { width:100%; height:auto; max-width:40rem; }
+  figcaption { color:var(--muted); font-size:.9rem; }
+  .bones { padding-left:1.25rem; } footer { margin:2rem 0 1rem; color:var(--muted); border-top:1px solid var(--line); padding-top:.75rem; }
+</style>  <link rel="stylesheet" crossorigin href="./assets/theme-pOv7AQ5s.css">
+</head>
+<body>
+<a class="skip" href="#apps">Skip to the apps</a>
+<main>
+  <h1><span class="lantern" aria-hidden="true">&#9650;</span> Graveyard Shift</h1>
+  <p class="pitch">One small skeleton library triages whatever needs a night watch into <strong>Needs you</strong>, <strong>Watch</strong> or <strong>Fine</strong>.</p>
+  <figure>
+    <svg viewBox="0 0 640 300" role="img" aria-labelledby="dia-t dia-d">
+      <title id="dia-t">1 skeleton, 2 apps</title>
+      <desc id="dia-d">One skeleton made of four bones: Evidence, Checks, Triage and Inbox. Two apps stand on it: Mussel Memory and Bridge Troll.</desc>
+      <rect x="1" y="1" width="638" height="298" rx="10" fill="#0d1117" stroke="#30363d"/>
+      <g font-family="system-ui,sans-serif" font-size="15" text-anchor="middle">
+        <rect x="90" y="24" width="190" height="64" rx="32" fill="#161b22" stroke="#f2b24a" stroke-width="2"/>
+        <text x="185" y="62" fill="#e6edf3" font-size="17">Mussel Memory</text>
+        <rect x="360" y="24" width="190" height="64" rx="32" fill="#161b22" stroke="#f2b24a" stroke-width="2"/>
+        <text x="455" y="62" fill="#e6edf3" font-size="17">Bridge Troll</text>
+        <g stroke="#9da7b3" stroke-width="2"><path d="M185 88V128"/><path d="M455 88V128"/></g>
+        <text x="320" y="122" fill="#9da7b3" font-size="13">config + adapters</text>
+        <rect x="30" y="136" width="580" height="130" rx="10" fill="#161b22" stroke="#30363d"/>
+        <text x="320" y="162" fill="#f2b24a" font-size="16">skeleton (4 bones)</text>
+        <g fill="#0d1117" stroke="#9da7b3">
+          <rect x="50" y="180" width="120" height="62" rx="8"/><rect x="180" y="180" width="120" height="62" rx="8"/>
+          <rect x="310" y="180" width="120" height="62" rx="8"/><rect x="440" y="180" width="150" height="62" rx="8"/>
+        </g>
+        <g fill="#e6edf3"><text x="110" y="217">Evidence</text><text x="240" y="217">Checks</text><text x="370" y="217">Triage</text><text x="515" y="217">Inbox</text></g>
+      </g>
+    </svg>
+    <figcaption>1 skeleton, 2 apps. Each app is a config plus adapters.</figcaption>
+  </figure>
+  <p>Every decision cites its evidence. A reading too poor to trust is never scored; the app asks for a retake.</p>
+  <h2>The four bones</h2>
+  <ol class="bones">
+    <li><strong>Evidence</strong>: every decision cites an id, source, time and licence.</li>
+    <li><strong>Checks</strong>: quality gates. A failed blocking check means no score.</li>
+    <li><strong>Triage</strong>: risk and checks become Needs you, Watch or Fine.</li>
+    <li><strong>Inbox</strong>: accessible cards, sorted worst first, with a Markdown export.</li>
+  </ol>
+  <h2 id="apps-h">Two apps</h2>
+  <ul id="apps" class="apps" aria-labelledby="apps-h" tabindex="-1">
+    <li><h3><a href="./mussel-memory/">Mussel Memory</a></h3><p>Water-intake screen triage from a photo. Blur, exposure, haze and framing are checked first, then percent blocked drives the level. Runs in your browser; photos are never uploaded.</p></li>
+    <li><h3><a href="./bridge-troll/">Bridge Troll</a></h3><p>Replay of the July 10-11, 2023 Vermont flood. A time slider moves USGS gauge readings against NWS flood categories and ranks Winooski and Lamoille River bridges from the FHWA National Bridge Inventory.</p></li>
+  </ul>
+  <footer>Source: <a href="https://github.com/thiagopari/graveyard-shift">https://github.com/thiagopari/graveyard-shift</a>. Public or synthetic data only. Demo software, not an engineering assessment. MIT licensed.</footer>
+</main>
+</body>
+</html>

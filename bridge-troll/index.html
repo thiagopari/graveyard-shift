@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><link rel="icon" href="data:,"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bridge Troll</title>
+<style>
+  .controls { display:grid; gap:.5rem; margin:1rem 0; } input[type=range] { width:100%; padding:0; }
+  table { border-collapse:collapse; width:100%; font-size:.9rem; } th, td { border:1px solid var(--line); padding:.35rem .5rem; text-align:left; }
+  .counts { font-weight:600; } footer { margin:2rem 0 1rem; color:var(--muted); border-top:1px solid var(--line); padding-top:.75rem; }
+  .gaps { margin:1rem 0; } #gauges { overflow-x:auto; }
+</style>  <script type="module" crossorigin src="../assets/bridge-troll-DV32vwXl.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/report-TlJ2A1jT.js">
+  <link rel="stylesheet" crossorigin href="../assets/theme-pOv7AQ5s.css">
+</head>
+<body>
+<a class="skip" href="#inbox">Skip to inbox</a>
+<main>
+  <a class="backlink" href="../">&larr; Graveyard Shift</a>
+  <h1>Bridge Troll</h1>
+  <p>Replay of the July 10-11, 2023 Vermont flood. Each Winooski and Lamoille River bridge is triaged from the nearest USGS gauge against NWS flood categories, plus its NBI scour code and substructure rating. Everything runs in your browser from public data.</p>
+  <div class="controls">
+    <label for="time">Replay time: <output id="when" for="time"></output></label>
+    <input id="time" type="range" min="0" max="0" step="1" value="0" aria-describedby="hint">
+    <p id="hint">Use the arrow keys to move 15 minutes, Page Up or Page Down for 6 hours. Readings are the latest observation at or before this time, never interpolated.</p>
+    <p><button id="peak" type="button">Jump to Montpelier peak</button> <button id="export" type="button">Export Markdown report</button></p>
+  </div>
+  <section class="gaps panel" aria-labelledby="gaps-h"><h2 id="gaps-h">Data gaps</h2><ul id="gaps"></ul></section>
+  <section aria-labelledby="gauges-h"><h2 id="gauges-h">Gauges</h2><div id="gauges"></div></section>
+  <section id="inbox" aria-label="Bridge Troll inbox" tabindex="-1"><h2>Bridges</h2><div id="cards"></div></section>
+  <div id="status" role="status" aria-live="polite"></div>
+  <footer>Demo replay, not an engineering assessment.</footer>
+</main>
+</body>
+</html>
