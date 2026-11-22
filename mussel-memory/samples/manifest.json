@@ -1,0 +1,186 @@
+{
+  "synthetic": true,
+  "license": "CC0-1.0",
+  "images": [
+    {
+      "file": "clean-00.png",
+      "variant": "clean",
+      "trueBlockedPct": 0,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-01.png",
+      "variant": "clean",
+      "trueBlockedPct": 7,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-02.png",
+      "variant": "clean",
+      "trueBlockedPct": 14,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-03.png",
+      "variant": "clean",
+      "trueBlockedPct": 15,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-04.png",
+      "variant": "clean",
+      "trueBlockedPct": 22,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-05.png",
+      "variant": "clean",
+      "trueBlockedPct": 29,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-06.png",
+      "variant": "clean",
+      "trueBlockedPct": 30,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-07.png",
+      "variant": "clean",
+      "trueBlockedPct": 37,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-08.png",
+      "variant": "clean",
+      "trueBlockedPct": 44,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-09.png",
+      "variant": "clean",
+      "trueBlockedPct": 45,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-10.png",
+      "variant": "clean",
+      "trueBlockedPct": 52,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-11.png",
+      "variant": "clean",
+      "trueBlockedPct": 59,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-12.png",
+      "variant": "clean",
+      "trueBlockedPct": 60,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-13.png",
+      "variant": "clean",
+      "trueBlockedPct": 67,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-14.png",
+      "variant": "clean",
+      "trueBlockedPct": 74,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-15.png",
+      "variant": "clean",
+      "trueBlockedPct": 75,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-16.png",
+      "variant": "clean",
+      "trueBlockedPct": 82,
+      "expectRetake": false
+    },
+    {
+      "file": "clean-17.png",
+      "variant": "clean",
+      "trueBlockedPct": 89,
+      "expectRetake": false
+    },
+    {
+      "file": "blurred-0.png",
+      "variant": "blurred",
+      "trueBlockedPct": 15,
+      "expectRetake": true
+    },
+    {
+      "file": "blurred-1.png",
+      "variant": "blurred",
+      "trueBlockedPct": 40,
+      "expectRetake": true
+    },
+    {
+      "file": "blurred-2.png",
+      "variant": "blurred",
+      "trueBlockedPct": 55,
+      "expectRetake": true
+    },
+    {
+      "file": "blurred-3.png",
+      "variant": "blurred",
+      "trueBlockedPct": 80,
+      "expectRetake": true
+    },
+    {
+      "file": "dark-0.png",
+      "variant": "dark",
+      "trueBlockedPct": 15,
+      "expectRetake": true
+    },
+    {
+      "file": "dark-1.png",
+      "variant": "dark",
+      "trueBlockedPct": 40,
+      "expectRetake": true
+    },
+    {
+      "file": "dark-2.png",
+      "variant": "dark",
+      "trueBlockedPct": 55,
+      "expectRetake": true
+    },
+    {
+      "file": "dark-3.png",
+      "variant": "dark",
+      "trueBlockedPct": 80,
+      "expectRetake": true
+    },
+    {
+      "file": "hazy-0.png",
+      "variant": "hazy",
+      "trueBlockedPct": 15,
+      "expectRetake": true
+    },
+    {
+      "file": "hazy-1.png",
+      "variant": "hazy",
+      "trueBlockedPct": 40,
+      "expectRetake": true
+    },
+    {
+      "file": "offscreen-0.png",
+      "variant": "offscreen",
+      "trueBlockedPct": 14.6,
+      "expectRetake": true
+    },
+    {
+      "file": "offscreen-1.png",
+      "variant": "offscreen",
+      "trueBlockedPct": 39.6,
+      "expectRetake": true
+    }
+  ]
+}

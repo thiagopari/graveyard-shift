@@ -1,0 +1,72 @@
+[
+  {
+    "file": "usgs-04286000.json",
+    "url": "https://nwis.waterservices.usgs.gov/nwis/iv/?format=json&sites=04286000&startDT=2023-07-08T00:00:00-04:00&endDT=2023-07-14T23:59:00-04:00&parameterCd=00060,00065&siteStatus=all",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "USGS NWIS instantaneous values, 00065 gage height (ft) and 00060 discharge (cfs), 2023-07-08T00:00:00-04:00 to 2023-07-14T23:59:00-04:00"
+  },
+  {
+    "file": "nws-flood-categories.json",
+    "url": "https://api.water.noaa.gov/nwps/v1/gauges/MONV1",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "NWS NWPS gauge MONV1, flood categories (-9999 = not published, stored as null)"
+  },
+  {
+    "file": "usgs-sites.json",
+    "url": "https://waterservices.usgs.gov/nwis/site/?format=rdb&sites=04286000&siteOutput=expanded",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "USGS site service, location of 04286000"
+  },
+  {
+    "file": "usgs-04290500.json",
+    "url": "https://nwis.waterservices.usgs.gov/nwis/iv/?format=json&sites=04290500&startDT=2023-07-08T00:00:00-04:00&endDT=2023-07-14T23:59:00-04:00&parameterCd=00060,00065&siteStatus=all",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "USGS NWIS instantaneous values, 00065 gage height (ft) and 00060 discharge (cfs), 2023-07-08T00:00:00-04:00 to 2023-07-14T23:59:00-04:00"
+  },
+  {
+    "file": "nws-flood-categories.json",
+    "url": "https://api.water.noaa.gov/nwps/v1/gauges/ESSV1",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "NWS NWPS gauge ESSV1, flood categories (-9999 = not published, stored as null)"
+  },
+  {
+    "file": "usgs-sites.json",
+    "url": "https://waterservices.usgs.gov/nwis/site/?format=rdb&sites=04290500&siteOutput=expanded",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "USGS site service, location of 04290500"
+  },
+  {
+    "file": "usgs-04292500.json",
+    "url": "https://nwis.waterservices.usgs.gov/nwis/iv/?format=json&sites=04292500&startDT=2023-07-08T00:00:00-04:00&endDT=2023-07-14T23:59:00-04:00&parameterCd=00060,00065&siteStatus=all",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "USGS NWIS instantaneous values, 00065 gage height (ft) and 00060 discharge (cfs), 2023-07-08T00:00:00-04:00 to 2023-07-14T23:59:00-04:00"
+  },
+  {
+    "file": "nws-flood-categories.json",
+    "url": "https://api.water.noaa.gov/nwps/v1/gauges/GEOV1",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "NWS NWPS gauge GEOV1, flood categories (-9999 = not published, stored as null)"
+  },
+  {
+    "file": "usgs-sites.json",
+    "url": "https://waterservices.usgs.gov/nwis/site/?format=rdb&sites=04292500&siteOutput=expanded",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "USGS site service, location of 04292500"
+  },
+  {
+    "file": "nbi-vt-bridges.json",
+    "url": "https://www.fhwa.dot.gov/bridge/nbi/2023/delimited/VT23.txt",
+    "retrieved": "2026-11-21T22:43:22.453Z",
+    "license": "Public domain (US Government work)",
+    "note": "FHWA National Bridge Inventory 2023, Vermont delimited file, subset: Winooski/Lamoille River crossings within 25 km of a kept gauge (47 matched, 47 kept)"
+  }
+]

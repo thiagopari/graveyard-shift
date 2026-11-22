@@ -1,0 +1,28 @@
+{
+  "name": "graveyard-shift",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "dev:bridge": "vite --config bridge-troll/vite.config.ts",
+    "bake:bridge": "tsx bridge-troll/scripts/bake.ts",
+    "dev:mussel": "vite --config mussel-memory/vite.config.ts",
+    "gen:mussel": "tsx mussel-memory/scripts/generate.ts",
+    "new-app": "node scripts/new-app.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "fast-check": "^3.23.0",
+    "jsdom": "^25.0.0",
+    "playwright-core": "^1.65.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.1.0"
+  }
+}
