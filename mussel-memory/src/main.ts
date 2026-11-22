@@ -28,7 +28,7 @@ async function load(file: File): Promise<void> {
   ctx.drawImage(bmp, 0, 0, canvas.width, canvas.height);
   const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
   decisions.unshift(toDecision(analyze(img), {
-    photoId: `${file.name}-${decisions.length + 1}`, source: 'uploaded photo (local)', takenAt: new Date(file.lastModified).toISOString(),
+    photoId: `${file.name}-${decisions.length + 1}`, fileName: file.name, source: 'uploaded photo (local)', takenAt: new Date(file.lastModified).toISOString(),
     license: 'user-owned', daysSinceCleaning: Number($<HTMLInputElement>('days').value) || 0,
   }));
   $('prompt').hidden = true;

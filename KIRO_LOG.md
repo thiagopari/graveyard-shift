@@ -23,3 +23,4 @@
 ## 2026-11-21 (wave 4, pre-publish cleanup)
 - **Cleanup**: removed the two banned words from README, `.kiro/steering/product.md` and `.kiro/specs/mussel-memory/requirements.md` (now "No real-site images").
 - **Repo URL**: replaced the `REPO_URL` placeholder with `https://github.com/thiagopari/graveyard-shift` in `index.html`, `scripts/smoke.mjs` and the polish spec; added it to the README.
+- **Retake title**: Mussel Memory retake card and evidence now show the plain file name; the `-N` counter stays only in the card id (`photoId`), so repeat uploads don't collide.

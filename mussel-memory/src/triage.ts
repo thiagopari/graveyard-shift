@@ -2,7 +2,10 @@ import { makeEvidence, type Decision } from '../../skeleton/src';
 import type { Analysis } from './analyze';
 
 export interface Reading {
+  /** Unique card id. */
   photoId: string;
+  /** Plain file name shown to people (titles, evidence). Defaults to photoId. */
+  fileName?: string;
   source: string;
   takenAt: string;
   license: string;
@@ -21,11 +24,12 @@ export function riskFor(blocked: number, daysSinceCleaning: number, previousBloc
 }
 
 export function toDecision(a: Analysis, r: Reading): Decision {
-  const evidence = [makeEvidence({ id: r.photoId, source: r.source, time: r.takenAt, license: r.license })];
+  const shown = r.fileName ?? r.photoId;
+  const evidence = [makeEvidence({ id: shown, source: r.source, time: r.takenAt, license: r.license })];
   if (a.retake || a.blocked === null) {
     const failed = a.checks.filter((c) => !c.pass).map((c) => c.id).join(', ');
     return {
-      id: r.photoId, title: `Retake photo ${r.photoId}`,
+      id: r.photoId, title: `Retake photo ${shown}`,
       summary: `Photo not trustworthy (${failed}). No score given. Retake it.`,
       risk: 0, checks: a.checks, evidence,
     };

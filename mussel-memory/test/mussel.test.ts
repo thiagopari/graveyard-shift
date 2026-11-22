@@ -90,3 +90,14 @@ describe('png + samples', () => {
     for (const i of m.images) expect(existsSync(join(dir, i.file))).toBe(true);
   });
 });
+
+describe('retake card text', () => {
+  it('shows the plain file name while keeping the card id unique', () => {
+    const bad = all.find((x) => x.expectRetake)!;
+    const a = analyze(bad.image);
+    const d = toDecision(a, { ...reading('sample-blurred-1.png-2'), fileName: 'sample-blurred-1.png' });
+    expect(d.title).toBe('Retake photo sample-blurred-1.png');
+    expect(d.evidence[0].id).toBe('sample-blurred-1.png');
+    expect(d.id).toBe('sample-blurred-1.png-2');
+  });
+});
