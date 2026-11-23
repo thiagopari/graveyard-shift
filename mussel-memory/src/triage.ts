@@ -42,3 +42,5 @@ export function toDecision(a: Analysis, r: Reading): Decision {
     risk, checks: a.checks, evidence,
   };
 }
+
+export const photosTriaged = (n: number): string => `${n} ${n === 1 ? 'photo' : 'photos'} triaged`;

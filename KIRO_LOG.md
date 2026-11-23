@@ -25,3 +25,6 @@
 - **Repo URL**: replaced the `REPO_URL` placeholder with `https://github.com/thiagopari/graveyard-shift` in `index.html`, `scripts/smoke.mjs` and the polish spec; added it to the README.
 - **Retake title**: Mussel Memory retake card and evidence now show the plain file name; the `-N` counter stays only in the card id (`photoId`), so repeat uploads don't collide.
 - **README fix**: re-measured the Essex Jct stage gap from the baked series (20.75 h) and changed the README's "20 h" to "about 21 h" to match the app's Data gaps note.
+
+## 2026-11-22 (post-publish fix)
+- **Plural fix**: the new-app template said "1 decisions loaded" and Mussel Memory said "photo(s) triaged"; both now use a small plural helper, with the plural check added as an extra assertion in an existing test (test counts unchanged).

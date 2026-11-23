@@ -1,7 +1,7 @@
 import '../../skeleton/src/theme.css';
 import { renderInbox, toMarkdown, type Decision } from '../../skeleton/src';
 import { analyze } from './analyze';
-import { toDecision } from './triage';
+import { photosTriaged, toDecision } from './triage';
 import cleanUrl from '../samples/clean-05.png?url';
 import busyUrl from '../samples/clean-12.png?url';
 import blurredUrl from '../samples/blurred-1.png?url';
@@ -33,7 +33,7 @@ async function load(file: File): Promise<void> {
   }));
   $('prompt').hidden = true;
   renderInbox($('inbox'), decisions);
-  $('status').textContent = `${decisions.length} photo(s) triaged. Top: ${decisions[0].title}`;
+  $('status').textContent = `${photosTriaged(decisions.length)}. Top: ${decisions[0].title}`;
 }
 
 $<HTMLInputElement>('file').addEventListener('change', (e) => {

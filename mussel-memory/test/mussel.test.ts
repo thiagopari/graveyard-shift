@@ -3,7 +3,7 @@ import fc from 'fast-check';
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { analyze } from '../src/analyze';
-import { riskFor, toDecision } from '../src/triage';
+import { photosTriaged, riskFor, toDecision } from '../src/triage';
 import { suite, synthesize } from '../src/synth';
 import { encodePng } from '../src/png';
 import { triage } from '../../skeleton/src';
@@ -99,5 +99,6 @@ describe('retake card text', () => {
     expect(d.title).toBe('Retake photo sample-blurred-1.png');
     expect(d.evidence[0].id).toBe('sample-blurred-1.png');
     expect(d.id).toBe('sample-blurred-1.png-2');
+    expect([1, 2].map(photosTriaged)).toEqual(['1 photo triaged', '2 photos triaged']);
   });
 });
